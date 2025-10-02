@@ -6,7 +6,7 @@ It allows you to create, edit, delete, drag-and-drop tasks across columns, switc
 ---
 
 ## 🚀 Live Demo
-🔗 [Click here to view deployed app](https://your-vercel-link.vercel.app)
+🔗 [Click here to view deployed app](https://piyu-mini-trello-app.vercel.app/)
 
 ---
 
