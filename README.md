@@ -1,12 +1,60 @@
-# React + Vite
+# 📝 Mini Trello App (Task Manager)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React-based task management application** inspired by Trello.  
+It allows you to create, edit, delete, drag-and-drop tasks across columns, switch between **light/dark themes**, and persist data in **localStorage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 [Click here to view deployed app](https://your-vercel-link.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+
+✅ Add new tasks with **title, description, due date, and priority**  
+✅ Edit or delete tasks with confirmation dialogs  
+✅ Drag-and-drop tasks between columns (`Todo`, `In Progress`, `Done`)  
+✅ Light/Dark theme toggle (stored in localStorage)  
+✅ Task details page for editing  
+✅ Persistent storage using **localStorage**  
+✅ Responsive design with Material-UI  
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 18 + Vite**
+- **React Router DOM** – for routing  
+- **@mui/material** – for UI components  
+- **@hello-pangea/dnd** – for drag-and-drop  
+- **Context API** – for theme management  
+- **localStorage** – for task persistence  
+
+---
+
+## 📂 Project Structure
+
+src/
+┣ 📂 context/
+┃ ┗ ThemeContext.jsx # Provides theme context (light/dark)
+┣ 📂 styles/
+┃ ┣ Board.css
+┃ ┣ List.css
+┃ ┗ TaskDetails.css
+┣ App.jsx # Routes setup
+┣ Board.jsx # Main board (task lists & drag-drop)
+┣ List.jsx # Each task column (Todo, In Progress, Done)
+┣ TaskDetails.jsx # Task detail & edit page
+┣ TaskInput.jsx # Input for adding new tasks
+┣ main.jsx # App entry point with ThemeProvider + Router
+
+
+---
+
+## ⚡ Installation & Setup
+
+### Clone the repository
+```bash
+git clone https://github.com/piyanshiParmar/mini-trello-app.git
+cd mini-trello-app
